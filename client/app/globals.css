@@ -1,13 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   background: '#f7f7f7';
+  font-family: "Manrope", serif;
 }
 
 @layer base {
   :root {
     --radius: 0.5rem;
+  }
+}
+@layer utilities {
+  .btn{
+    @apply capitalize rounded-3xl w-44 h-12 text-lg hover:scale-105 transition-all hover:border hover:text-xl font-bold
+  }
+  .white-icon {
+    fill: white;
+  }
+  .search-icon {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg); /* This will give a white color */
   }
 }

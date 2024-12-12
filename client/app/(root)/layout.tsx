@@ -6,7 +6,7 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="container mx-auto p-6 xl:p-20 ">
+    <main className="max-w-full mx-auto ">
       <Navbar />
       {children}
     </main>
